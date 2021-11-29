@@ -2,6 +2,8 @@
 
 What on earth does “Parallelising the parallel jobs” mean??
 Without going in depth, On a layman term,
+
+
 Spark creates the DAG or the Lineage based on the sequence we have created the RDD, applied transformations and actions.
 It applies the Catalyst optimiser on the dataframe or dataset to tune your queries. but what it doesn’t do is, running your function in parallel to each other.
 We always tend to think that the Spark is a framework which splits your jobs into tasks and stages and runs in parallel.
